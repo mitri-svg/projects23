@@ -1,0 +1,58 @@
+html,body{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 70px;
+    background-color: lime;
+    font-size: 1.27em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item{
+    background-color: skyblue;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.175em;
+    background-size: cover;
+    border: 2.129px solid;
+}
+.item1{grid-area: item1; justify-content: center; align-items: center;}
+.item2{grid-area: item2; }
+.item3{grid-area: item3; justify-content: center; align-items: center;}
+.item4{grid-area: item4; justify-content: center; align-items: center;}
+.item5{grid-area: item5; }
+.container{
+    display: grid;
+    margin-top: 13px;
+    gap: 10px;
+    padding: 20px;
+    background-color: skyblue;
+    grid-template-areas:
+    'item1 item1 item1 item1 item1 '
+    'item3 item3 item3 item4 item4 '
+    'item2 item2 item5 item5 item5 '
+    'item2 item2 item5 item5 item5 ';
+}
+.design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    font-size: 1.27em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 70px;
+    background-color: lime;
+}
+.item4{
+    background-image: url(img1.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 150px;
+}
